@@ -19,7 +19,7 @@ docker run -it -d \
 -v ${your_path_here}/server.cfg:/home/steam/l4d2server/left4dead2/cfg/server.cfg:ro \
 -v ${your_path_here}/host.txt:/home/steam/l4d2server/left4dead2/host.txt:ro \
 -v ${your_path_here}/motd.txt:/home/steam/l4d2server/left4dead2/motd.txt:ro \
-hoshinorei/l4d2server:edge \
+shinnasuka/l4d2server:latest \
 "-secure +exec server.cfg +map c1m1_hotel -port 27015"
 ```
 
