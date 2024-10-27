@@ -27,3 +27,4 @@ Join the game by typing in below command via L4D2 console
 ```bash
 connect ${ip}:27088
 ```
+
