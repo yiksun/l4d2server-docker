@@ -10,6 +10,8 @@ WORKDIR /home/steam
 RUN wget https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz && \
     tar -xzf steamcmd_linux.tar.gz && \
     rm -rf steamcmd_linux.tar.gz && \
+    ./steamcmd.sh +force_install_dir /home/steam/l4d2server +@sSteamCmdForcePlatformType windows && \
+    ./steamcmd.sh +force_install_dir /home/steam/l4d2server +@sSteamCmdForcePlatformType linux && \
     ./steamcmd.sh +force_install_dir /home/steam/l4d2server +login anonymous +app_update 222860 validate +quit
 EXPOSE 27015 27015/udp
 VOLUME /home/steam/l4d2server/left4dead2/addons \
